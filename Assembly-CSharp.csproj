@@ -50,19 +50,42 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+     <Compile Include="Assets\Foundation\Extensions\DictionaryExtension.cs" />
+     <Compile Include="Assets\Foundation\Extensions\TransformExtension.cs" />
+     <Compile Include="Assets\Foundation\GameRoot.cs" />
+     <Compile Include="Assets\Foundation\Localization\Localization.cs" />
+     <Compile Include="Assets\Foundation\Localization\LocalizedText.cs" />
+     <Compile Include="Assets\Foundation\Singleton.cs" />
+     <Compile Include="Assets\Foundation\UIBase\AnimateView.cs" />
+     <Compile Include="Assets\Foundation\UIBase\BaseContext.cs" />
+     <Compile Include="Assets\Foundation\UIBase\BaseView.cs" />
+     <Compile Include="Assets\Foundation\UIBase\ContextManager.cs" />
+     <Compile Include="Assets\Foundation\UIBase\UIManager.cs" />
+     <Compile Include="Assets\Foundation\UIBase\UIType.cs" />
+     <Compile Include="Assets\Foundation\UIComponent\GridScroller.cs" />
+     <Compile Include="Assets\Foundation\UIEffect\BlendColor.cs" />
+     <Compile Include="Assets\Foundation\UIEffect\GradientColor.cs" />
      <Compile Include="Assets\Scripts\Star.cs" />
      <Compile Include="Assets\Scripts\StarManager.cs" />
      <Compile Include="Assets\Scripts\Utils\CameraScale.cs" />
      <Compile Include="Assets\Scripts\Utils\ColorUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\GUIHelper.cs" />
      <Compile Include="Assets\Scripts\Utils\ResoucesPathEnum.cs" />
+     <Compile Include="Assets\Scripts\View\HighScoreItem.cs" />
+     <Compile Include="Assets\Scripts\View\HighScoreView.cs" />
+     <Compile Include="Assets\Scripts\View\MainMenuView.cs" />
+     <Compile Include="Assets\Scripts\View\NextMenuView.cs" />
+     <Compile Include="Assets\Scripts\View\OptionMenuView.cs" />
+     <Compile Include="Assets\SimpleJSON\SimpleJSON.cs" />
      <Compile Include="Assets\VSCode\NewBehaviourScript.cs" />
      <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\Resources\Localization\English.json.txt" />
      <None Include="Assets\Demigiant\DemiLib\DemiLib.xml" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\Resources\Localization\Chinese.json.txt" />
      <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
@@ -82,23 +105,26 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="DOTween43">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
- </Reference>
  <Reference Include="DemiLib">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DemiLib/DemiLib.dll</HintPath>
- </Reference>
- <Reference Include="DOTween50">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DemiLib/DemiLib.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
- <Reference Include="DOTweenPro">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>/Users/zhengxichao/Desktop/PopStar/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenPro">
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>/Users/zhengxichao/Documents/PopStar/Assets/SimpleJSON/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ResoucesPathEnum
 {
-    public static string prrfabPath = "prefab/";
+    public static string prrfabPath = "View/";
 }
