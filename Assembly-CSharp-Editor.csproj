@@ -49,10 +49,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioController_Editor.cs" />
+     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioItemOverview.cs" />
+     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioLogView.cs" />
+     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioObject_Editor.cs" />
+     <Compile Include="Assets\AudioToolkit\AudioToolkit\Editor\AudioUtility.cs" />
      <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+     <Compile Include="Assets\Editor\BMFontEditor.cs" />
+     <Compile Include="Assets\Editor\Font\ArtistFont.cs" />
+     <Compile Include="Assets\Editor\Font\BMFont.cs" />
+     <Compile Include="Assets\Editor\Font\BMFontReader.cs" />
+     <Compile Include="Assets\Editor\Font\BMGlyph.cs" />
+     <Compile Include="Assets\Editor\Font\BetterList.cs" />
+     <Compile Include="Assets\Editor\Font\ByteReader.cs" />
+     <Compile Include="Assets\Editor\Font\EditorHelper.cs" />
+     <Compile Include="Assets\Editor\Font\EditorUtils.cs" />
+     <Compile Include="Assets\Editor\Font\FontMakerWizard.cs" />
      <Compile Include="Assets\VSCode\Plugins\Editor\VSCode.cs" />
+     <None Include="Assets\AudioToolkit\Readme.txt" />
      <None Include="Assets\Demigiant\DOTweenPro\readme.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Foundation\Shader\CustomColor.shader" />
      <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\Resources\Localization\English.json.txt" />
      <None Include="Assets\Demigiant\DemiLib\DemiLib.xml" />

@@ -2,48 +2,47 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-namespace MoleMole
-{
-    public class NextMenuContext : BaseContext
-    {
-        public NextMenuContext()
-            : base(UIType.NextMenu)
-        {
 
-        }
+public class NextMenuContext : BaseContext
+{
+    public NextMenuContext()
+        : base(UIType.NextMenu)
+    {
+
+    }
+}
+
+public class NextMenuView : AnimateView
+{
+
+    public Animator _animator;
+
+    public override void OnEnter(BaseContext context)
+    {
+        base.OnEnter(context);
     }
 
-    public class NextMenuView : AnimateView
+    public override void OnExit(BaseContext context)
     {
+        base.OnExit(context);
+    }
 
-        public Animator _animator;
+    public void BackCallBack()
+    {
+        Singleton<ContextManager>.Instance.Pop();
+    }
 
-        public override void OnEnter(BaseContext context)
+    public void ChangeLangCallBack()
+    {
+        if (Singleton<Localization>.Instance.Language == Localization.CHINESE)
         {
-            base.OnEnter(context);
+            Singleton<Localization>.Instance.Language = Localization.ENGLISH;
         }
-
-        public override void OnExit(BaseContext context)
+        else
         {
-            base.OnExit(context);
-        }
-
-        public void BackCallBack()
-        {
-            Singleton<ContextManager>.Instance.Pop();
-        }
-
-        public void ChangeLangCallBack()
-        {
-            if (Singleton<Localization>.Instance.Language == Localization.CHINESE)
-            {
-                Singleton<Localization>.Instance.Language = Localization.ENGLISH;
-            }
-            else
-            {
-                Singleton<Localization>.Instance.Language = Localization.CHINESE;
-            }
+            Singleton<Localization>.Instance.Language = Localization.CHINESE;
         }
     }
 }
+
 
